@@ -30,22 +30,23 @@ export default function Layout({ children, home }) {
                     <>
                         <Image
                             priority
-                            src="../images/profile.jpg"
+                            src="/image/profile.jpg"
                             className={utilStyles.borderCircle}
                             height={144}
                             width={144}
                             alt={name}
                         />
+                        
                         <h1 className={utilStyles.heading2Xl}>{name}</h1>
                     </>
                 ) : (
                     <>
-                        <Link href="/">
+                        <Link href="/https://es.wikipedia.org/wiki/Hans_Moleman">
                             <a>
                                 <Image
                                     priority
                                     src="/images/profile.jpg"
-                                    className={utilStyles.borderCircle}
+                                  className={utilStyles.borderCircle}
                                     height={108}
                                     width={108}
                                     alt={name}
@@ -53,7 +54,7 @@ export default function Layout({ children, home }) {
                             </a>
                         </Link>
                         <h2 className={utilStyles.headingLg}>
-                            <Link href="/">
+                            <Link href="/https://es.wikipedia.org/wiki/Hans_Moleman">
                                 <a className={utilStyles.colorInherit}>{name}</a>
                             </Link>
                         </h2>
